@@ -15,24 +15,58 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 5vmin);
   color: white;
+  overflow:hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.App-para {
+  font-size: calc(5px + 1vmin);
+  color:lightsteelblue;
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-body {
+  font-size: calc(5px + 1vmin);
+  color:honeydew;
+  justify-content: flex-end;
+}
+
+.App-para2 {
+  font-size: calc(5px + 1vmin);
+  color:honeydew;
+}
+
+.App-line {
+  font-size: calc(10px + 1vmin);
+  color:mediumslateblue;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.noButton {
+  position: static;
+}
+
+@media screen and (min-width: 0px) {
+  .noButton {
+    min-width: 5px; /* Adjust button width */
+    min-height: 10px; /* Adjust button height */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .noButton {
+    max-width: calc(100% - 100px); /* Adjust button width */
+    max-height: calc(100% - 40px); /* Adjust button height */
   }
 }
